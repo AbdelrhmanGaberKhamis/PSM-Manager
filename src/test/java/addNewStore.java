@@ -9,11 +9,11 @@ public class addNewStore extends TestBase{
         signInPage.ClickOnLoginBtn();
         addNewStorePage.EnterFirstName("OperatorFname");
         addNewStorePage.EnterLastName("OperatorLname");
-        addNewStorePage.EnterEmail("operator@softxpertdev.com");
-        addNewStorePage.EnterConfirmEmail("operator@softxpertdev.com");
+        addNewStorePage.EnterEmail("operator4@softxpertdev.com");
+        addNewStorePage.EnterConfirmEmail("operator4@softxpertdev.com");
         addNewStorePage.EnterPhone("11");
         addNewStorePage.Enterpassword("12345678");
-        addNewStorePage.EnterBusinessName();
+        addNewStorePage.EnterBusinessName("4");
         addNewStorePage.SelectCountry("United States");
         addNewStorePage.EnterAddress("Address");
         addNewStorePage.EnterSuite("Suite");

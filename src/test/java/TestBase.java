@@ -13,7 +13,7 @@ public class TestBase {
     public void Setup() {
 
         driver.manage().window().maximize();
-        driver.get("https://manager-alpha.postscanmail.com/");
+        driver.get("https://manager-dev.postscanmail.com/");
         addNewStorePage = new addNewStorePage(driver);
         signInPage = new SignInPage(driver);
         checkOutPage= new checkOutPage(driver);

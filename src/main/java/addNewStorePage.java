@@ -67,13 +67,13 @@ public class addNewStorePage extends PageBase
     {
         driver.findElement(password).sendKeys(Password);
     }
-    public void EnterBusinessName()
+    public void EnterBusinessName(String BusinessName)
     {
         wait=new WebDriverWait(driver,Duration.ofSeconds(3));
         wait.until(ExpectedConditions.elementToBeClickable(businessName));
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(businessName));
         driver.findElement(businessName).click();
-        driver.findElement(businessName).sendKeys("United States");
+        driver.findElement(businessName).sendKeys(BusinessName);
     }
 
     public void SelectCountry(String country)
