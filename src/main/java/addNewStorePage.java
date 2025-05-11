@@ -53,6 +53,8 @@ public class addNewStorePage extends PageBase
     }
     public void EnterPhone(String phonenumber)
     {
+        wait=new WebDriverWait(driver,Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(phone));
         driver.findElement(phone).sendKeys(phonenumber);
     }
     public void EnterEmail(String Email)
@@ -105,6 +107,8 @@ public class addNewStorePage extends PageBase
     }
     public void EnterCity(String City)
     {
+        wait=new WebDriverWait(driver,Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.elementToBeClickable(city));
         driver.findElement(city).click();
         driver.findElement(city).sendKeys(City);
     }
